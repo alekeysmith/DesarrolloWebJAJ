@@ -1,0 +1,47 @@
+body{
+    background-color: lightblue;
+    margin:0;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    color : blue;
+}
+h2{
+    text-align:center;
+    color: black; 
+}
+nav{
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap:wrap;
+}
+h3{
+    text-align:center;
+    color:green;
+    font-size:40px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+img{
+    width:260px;
+    height: 260px;
+    display: block;
+    margin:0 auto;
+    border-radius: 6%;
+}
+table{
+    border-collapse: collapse;
+    
+    
+}
+td{
+    border: 1px solid  rgb(60, 25, 225);
+    padding: 8px;
+}
+.conteiner{
+    background-color: pink;
+    border-radius: 8px;
+    text-align :center;
+}

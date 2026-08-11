@@ -1,0 +1,133 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-color: #5aabf7e6;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tabla-flex {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.celda-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid rgb(46, 185, 41);
+    border-radius: 8px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.celda-flex img {
+    margin-bottom: 10px;
+}
+
+.celda-flex p {
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    color: brown;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+h2{
+    margin-top:40px;
+    color:rgb(236, 49, 12);
+    padding: 10px;
+
+}
+
+h3{
+    display: block;
+    margin-top:40px;
+    color:blueviolet;
+    padding: 10px;
+    border: 5px dotted rgb(111, 186, 221);
+    background-color: rgb(168, 221, 115);
+
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+td{
+    border: 5px solid rgb(19, 164, 243);
+    padding: 8px;
+    border-radius: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+.idiomas-lista{
+    border: 3px solid orange;    
+    padding: 10px;
+    background-color: rgb(192, 151, 100);
+    display: flex;              
+    flex-direction: column-reverse;     
+    gap: 8px;               
+}
+
+.idiomas-lista li{
+    display: block;
+    border: 5px solid orange;    
+    padding: 6px;
+    background-color: rgb(188, 192, 73);
+    border-radius: 5px;        
+}
+
+.plataformas-lista{
+    border: 3px solid orange;  
+    padding: 10px;
+    background-color: rgb(192, 151, 100);
+    display: flex;            
+    flex-wrap: wrap;            
+    gap: 10px;                
+    justify-content: center;     
+}
+
+.plataformas-lista li {
+    display: flex;             
+    padding: 6px;
+    background-color: rgb(188, 192, 73);
+    border-radius: 8px;        
+    align-items: center;        
+    justify-content: center;   
+    min-width: 120px;        
+   
+}

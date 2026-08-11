@@ -1,0 +1,170 @@
+body{
+    background-color: linear-gradient(135deg, #7470cd,#1fea44);
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Georgia',sans-serif;
+    margin:0;
+}
+header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background:linear-gradient(135deg,#1c04cf,#a29bfe);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+}
+h1 {
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap: 15px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+nav a {
+    color: white;
+    text-decoration:none;
+    padding: 10px 20px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 25px;
+    border: 2px solid white;
+    font-weight: bold;
+}
+.historia-potosi{
+    border: 3px solid rgb(31, 162, 244);
+    padding:20px;
+    margin-top: 20px;
+    background: linear-gradient(135deg,rgb(91, 141, 228), #fff);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.videos-container{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom: 20px;
+}
+.videos-container1{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom: 20px;
+}
+video {
+    border: 3px solid #41dce7;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+h2{
+    text-align: center;
+    color: #2d3436;
+    font-size: 28px;
+    margin: 20px 0;
+    border-bottom: 3px solid #3eacde;
+    padding-bottom: 10px;
+}
+p {
+    text-align: justify;
+    color:#2d3436;
+    line-height: 1.8;
+    font-size: 16px;
+    padding: 15px;
+    background: rgba(59, 203, 239, 0.7);
+    border-radius: 10px;
+    border-left: 5px solid #3ed9e8;
+}
+.experiencia-personal {
+    border: 3px solid rgb(76, 191, 232);
+    padding: 25px;
+    margin-top: 25px;
+    background: linear-gradient(135deg, rgb(54, 56, 226), #a8e6cf);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(218, 87, 16, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.experiencia-personal h2 {
+    color: #eb5a1c;
+    border-bottom-color: #102a1b;
+}
+
+.experiencia-personal p {
+    border-left-color: #27ae60;
+}
+
+.datos-curiosos {
+    background: rgba(70, 238, 87, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #27ae60;
+    margin-top: 15px;
+}
+
+.datos-curiosos summary {
+    font-weight: bold;
+    color: #27ae60;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+    background: rgba(39, 174, 96, 0.1);
+    border-radius: 8px;
+}
+
+.datos-curiosos ul {
+    margin-top: 15px;
+    padding-left: 25px;
+}
+
+.datos-curiosos li {
+    margin-bottom: 8px;
+    color: #2d3436;
+    line-height: 1.6;
+    padding: 5px 0;
+    border-bottom: 1px dotted #27ae60;
+}
+
+.datos-curiosos li:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    .videos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    video {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 22px;
+    }
+}
