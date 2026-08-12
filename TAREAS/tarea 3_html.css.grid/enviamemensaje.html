@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Comunicate - Nelva Adalit</title>
+    <link rel="stylesheet" href="enviamemensaje.css">
+</head>
+<body>
+    <header>
+        <h1>ME AGRADARÍA ESCUCHARTE Y SABER MÁS DE TÍ</h1>
+        <nav>
+            <a href="yo.html">YO</a>
+            <a href="mifamilia.html">Mi Familia</a>
+            <a href="mishobbies.html">Mis Hobbies</a>
+            <a href="misamigos.html">Mis Amigos</a>
+            <a href="miciudad.html">Mi ciudad</a>
+            <a href="enviamemensaje.html">Enviar Mensaje</a>
+        </nav>
+    </header>
+    <main>
+        <form action class="formulario-principal">
+            <fieldset class="info-personal">
+              <legend>Llena con tu información personal</legend>
+
+              <label for="nombre">Nombre Completo:</label>
+              <input type="text" id="nombre" name="nombre">
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email">
+
+              <label for="fecha">Fecha de Nacimiento:</label>
+              <input type="date" id="fecha" name="fecha">
+
+             <label>Sexo:</label>
+             <div class="radio-group">
+              <input type="radio" id="masculino" name="sexo" value="masculino" required> 
+              <label for="masculino">Masculino</label>
+              <input type="radio" id="femenino" name="sexo" value="femenino" required> 
+              <label for="femenino">Femenino</label>
+             </div>
+              
+            <label>Género de películas que prefieres:</label>
+            <div class="radio-group">
+               <input type="radio" id="fantasia" name="pelicula" value="fantasia" required>
+               <label for="fantasia"> Fantasía</label>
+               <input type="radio" id="historia" name="pelicula" value="historia" required>
+               <label for="historia"> Historia</label> 
+            </div>
+
+              <label for="mensaje">Enviar un Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+              
+              <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+
+        <form action class="formulario-secundario">
+            <fieldset class="conectar">
+             <legend>Más maneras de conectar:</legend>
+             
+             <label for="manera">¿Qué manera prefieres?</label>
+             <select id="manera" name="manera">
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="email">Email</option>
+                <option value="telefono">Teléfono</option>
+                <option value="redes_sociales">Redes Sociales</option>
+             </select>
+
+            <label for="area">¿De qué área eres?</label>
+              <select id="area" name="area">
+               <option value="" disabled selected>Elige una</option> 
+               <option value="medicina">Medicina</option>
+               <option value="ciencias_exactas">Ciencias Exactas</option>
+               <option value="deportes">Deportes</option> 
+             </select>
+
+             <button type="submit">Conectar</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

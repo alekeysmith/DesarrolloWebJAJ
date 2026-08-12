@@ -1,0 +1,226 @@
+body {
+    background-color: lightblue;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: darkblue;
+    font-size: 24px;
+    margin: 0 0 20px 0;
+}
+
+h2 {
+    color: blue;
+    font-size: 18px;
+    margin: 0;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 5px;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    gap: 20px;
+}
+
+h3 {
+    color: darkblue;
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+    text-align: center;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 3px solid blue;
+}
+
+.tabla-certificaciones, .tabla-repositorios {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2px;
+    margin: 20px auto;
+    width: 90%;
+    border: 2px solid blue;
+}
+
+.celda-encabezado {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.celda {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border: 1px solid lightgray;
+}
+
+.container {
+    background-color: pink;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    color: black;
+}
+
+.container1 {
+    background-color: lightgreen;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.lista-habilidades {
+    background-color: lightblue;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 2px solid blue;
+    display: grid;
+    gap: 8px;
+}
+
+.lista-habilidades li {
+    color: darkblue;
+    padding: 8px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid blue;
+    list-style: none;
+}
+
+.lista-idiomas {
+    background-color: lightgreen;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid green;
+    display: grid;
+    gap: 8px;
+    list-style: none;
+}
+
+.lista-idiomas li {
+    color: darkgreen;
+  
+    padding: 8px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid green;
+}
+
+p {
+    color: black;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 15px;
+    background-color: lightyellow;
+    border-radius: 5px;
+    border-left: 4px solid blue;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        gap: 15px;
+    }
+    
+    nav {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    nav a {
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    main {
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .tabla-certificaciones, .tabla-repositorios {
+        grid-template-columns: 2fr 1fr 1fr;
+        width: 100%;
+        gap: 1px;
+    }
+    
+    .celda-encabezado, .celda {
+        padding: 8px;
+        font-size: 12px;
+    }
+    
+    .lista-habilidades, .lista-idiomas {
+        padding: 10px;
+        gap: 5px;
+    }
+    
+    .lista-habilidades li, .lista-idiomas li {
+        padding: 6px;
+        font-size: 12px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-size: 16px;
+    }
+    
+    h3 {
+        font-size: 16px;
+        padding: 8px;
+    }
+    
+    img {
+        width: 180px;
+        height: 180px;
+    }
+    
+    p {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
