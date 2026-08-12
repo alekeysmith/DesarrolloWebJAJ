@@ -1,0 +1,164 @@
+
+
+:root {
+  --color-principal: #4b2e5e;
+  --color-secundario: #26deff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #773ee0;
+  color: #2b2b2b;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-secundario);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* grid movil  */
+.layout {
+  display: grid;
+  grid-template-areas:
+    "cabecera"
+    "navegacion"
+    "contenido"
+    "lateral"
+    "pie";
+    grid-template-columns: 1fr;
+    gap: 12px;
+  padding: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cabecera { grid-area: cabecera; }
+.navegacion { grid-area: navegacion; }
+.contenido { grid-area: contenido; }
+.lateral { grid-area: lateral; }
+.pie { grid-area: pie; }
+
+.cabecera {
+  background-color: var(--color-principal);
+  color: white;
+  padding: 18px;
+}
+
+.navegacion, .contenido, .lateral {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+.navegacion ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.navegacion a {
+  display: block;
+  padding: 8px;
+  color: #2b2b2b;
+}
+
+.navegacion a:hover {
+  background-color: #eeeae4;
+}
+
+.navegacion a.activo {
+  background-color: var(--color-principal);
+  color: white;
+}
+
+/* galeria de noticias, grid anidado dentro de .contenido */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.tarjeta {
+  border: 1px solid #ccc;
+
+}
+
+.tarjeta:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+.categoria {
+  display: inline-block;
+  background-color: var(--color-secundario);
+  color: white;
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  margin: 10px;
+}
+
+.tarjeta h3 {
+  padding: 0 10px;
+}
+
+.tarjeta p {
+  padding: 0 10px;
+  font-size: 0.9rem;
+}
+
+.leer-mas {
+  display: block;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.lateral ol {
+  padding-left: 18px;
+}
+
+.boton-suscribir {
+  display: inline-block;
+  background-color: var(--color-secundario);
+  color: white;
+  padding: 8px 14px;
+  margin-top: 8px;
+}
+
+.pie {
+  background-color: var(--color-principal);
+  color: white;
+  text-align: center;
+  padding: 12px;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  .layout {
+    grid-template-areas:
+      "cabecera cabecera"
+      "navegacion contenido"
+      "lateral contenido"
+      "pie pie";
+    grid-template-columns: 220px 1fr;
+  }
+}
+
+/* escritorio */
+@media (min-width: 1024px) {
+  .layout {
+    grid-template-areas:
+      "cabecera cabecera cabecera"
+      "navegacion contenido lateral"
+      "pie pie pie";
+    grid-template-columns: 230px 1fr 260px;
+  }
+}

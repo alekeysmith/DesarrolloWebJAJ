@@ -1,0 +1,246 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e2e8f0; 
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+
+.caja-seccion {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+}
+
+h3 {
+    color: #2F4F4F;
+    border-bottom: 2px dashed #2F4F4F;
+    padding-bottom: 5px;
+}
+
+
+#cabecera {
+    background-color: #2F4F4F;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+}
+
+.titulos {
+    margin-left: 15px;
+}
+
+.titulos h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.titulos h2 {
+    margin: 5px 0 0 0;
+    font-size: 13px;
+    color: #ccc;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-left: 10px;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: #4CAF50; 
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: #388E3C; 
+}
+
+
+figure {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 0 0 20px 0;
+}
+
+figcaption {
+    color: #555;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dd {
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+
+#tabla-horarios {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 15px;
+}
+
+#tabla-horarios th, #tabla-horarios td {
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: left;
+}
+
+
+#tabla-horarios th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+#tabla-horarios tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+#tabla-horarios tbody tr:hover {
+    background-color: #c8e6c9;
+}
+
+.fila-total {
+    background-color: #2F4F4F !important;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+fieldset {
+    margin-bottom: 20px;
+    border: 2px solid #4CAF50;
+    padding: 15px;
+}
+
+legend {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.inline {
+    display: inline;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.etiqueta-falsa {
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+
+input:focus, select:focus, textarea:focus {
+    background-color: #e8f5e9;
+    border: 2px solid #4CAF50;
+    outline: none; 
+}
+
+
+.botones {
+    margin-top: 20px;
+    text-align: center;
+}
+
+input[type="submit"], input[type="reset"] {
+    padding: 12px 25px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease; 
+}
+
+input[type="submit"] {
+    background-color: #2F4F4F;
+}
+
+input[type="submit"]:hover {
+    background-color: #1a2b2b;
+}
+
+input[type="reset"] {
+    background-color: #888;
+    margin-left: 15px;
+}
+
+input[type="reset"]:hover {
+    background-color: #555;
+}
+
+
+footer {
+    background-color: #222;
+    color: #eee;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #4CAF50;
+}
