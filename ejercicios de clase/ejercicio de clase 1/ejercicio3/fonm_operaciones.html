@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+        select, input[type="number"] {
+            color: #46f75b;
+            border: 2px solid #46f755;
+            padding: 6px;
+            border-radius: 4px;
+            font-size: 15px;
+        }
+        input[type="submit"] {
+            background-color: #46f772;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form action="resuelto.php" method="get">
+        <label for="operacion" >operaciones</label>
+        <select name="operacion" id="operacion">
+            <option value="Suma">sumar</option>
+            <option value="resta">restar</option>
+            <option value="multiplicacion">multiplicar</option>
+            <option value="division">Dividir</option>
+        </select> <br> <br>
+        <label for="n" >introduzca n</label>
+        <input type="number" name="n" id="n"> <br><br>
+        <input type="submit" value="generar">
+    </form>
+</body>
+</html>
