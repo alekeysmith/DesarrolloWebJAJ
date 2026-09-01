@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+
+</head>
+<body>
+    <h2>Formulario de operaciones</h2>
+    <form action="tabla.php" method="POST">
+        <label for="operacion">Selecciona la operacion</label>
+        <select name="operacion" id="operacion " required>
+            <option value="suma">Suma</option>
+            <option value="resta">Resta</option>
+            <option value="multiplicacion">Multiplicacion</option>
+            <option value="division">Division</option>
+
+        </select>
+        <br><br>
+
+        <label for="n">Ingrese un numero n (del 1 al 10):</label>
+        <input type="number" name="n" id="n" min="1" max="10" required>
+        <br><br>
+
+        <input type="submit" value="Generar">
+    </form> 
+</body>
+</html>
