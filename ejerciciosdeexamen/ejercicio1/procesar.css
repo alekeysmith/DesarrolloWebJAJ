@@ -1,0 +1,25 @@
+.rojo {
+    background-color: red ;
+    color: white;
+}
+
+.amarillo {
+    background-color: gold;
+    color: black;
+}
+
+.verde {
+    background-color: green;
+    color: white;
+}
+
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px 15px;
+    font-weight: bold;
+    text-align: center;
+}

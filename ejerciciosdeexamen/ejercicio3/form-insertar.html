@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nuevo Libro</title>
+</head>
+<body>
+
+    <h2>Insertar Nuevo Libro</h2>
+
+    <form action="insertar.php" method="POST">
+        <label for="titulo">Título:</label><br>
+        <input type="text" id="titulo" name="titulo" required><br><br>
+
+        <label for="autor">Autor:</label><br>
+        <input type="text" id="autor" name="autor" required><br><br>
+
+        <label for="anio">Año:</label><br>
+        <input type="number" id="anio" name="anio" required><br><br>
+
+        <label for="editorial">Editorial:</label><br>
+        <input type="text" id="editorial" name="editorial" required><br><br>
+
+        <input type="submit" value="Guardar Libro">
+    </form>
+
+</body>
+</html>
