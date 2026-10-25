@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joan Alexander Presentacion</title>
+
+    <!-- Tema (colores) de la seccion actual: app.js cambia este href -->
+    <link id="tema" rel="stylesheet" href="css/yo.css">
+    <!-- Estilos comunes de AJAX (cargando, errores, mensajes) -->
+    <link rel="stylesheet" href="css/ajax.css">
+</head>
+<body>
+    <!-- MARCO FIJO: nunca se recarga -->
+    <header>
+        <h1 id="titulo">HOLA SOY JOAN ALEXANDER ESTUDIANTE DE SIS256</h1>
+        <nav id="menu">
+            <a href="#yo" data-seccion="yo">Yo</a>
+            <a href="#familia" data-seccion="familia">Mi familia</a>
+            <a href="#amigos" data-seccion="amigos">Mis amigos</a>
+            <a href="#ciudad" data-seccion="ciudad">Mi ciudad</a>
+            <a href="#hobbies" data-seccion="hobbies">Mis hobbies</a>
+            <a href="#contacto" data-seccion="contacto">Comunicate</a>
+        </nav>
+    </header>
+
+    <!-- AQUI AJAX INSERTA LA SECCION (carpeta secciones/) -->
+    <div id="contenido" aria-live="polite">
+        <p class="estado">Cargando...</p>
+    </div>
+
+    <noscript><p class="error">Esta pagina necesita JavaScript.</p></noscript>
+    <script src="js/app.js"></script>
+</body>
+</html>

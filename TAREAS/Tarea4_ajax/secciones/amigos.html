@@ -1,0 +1,26 @@
+<main>
+    <section class="seccion-principal">
+        <h2>Personas Especiales </h2>
+        <img src="imagenes/amigos.webp" alt="Mis amigos" width="250">
+        <p>Estas personas han sido un pilar fundamentale en mi vida,brindandome apoyo tanto consciente como inconscientemente.<br>
+            Ellos,conociendome profundamente, estuvieron ahi para mi en los momentos mas dificiles, y me han ayudado a crecer como persona. <br>
+            Estoy agradecido por tener amigos tan leales y comprensivos, y valoro cada momento que compartimos juntos. <br>
+        </p>
+    </section>
+    <section class="seccion-tabla">
+        <h2>Como nos conocimos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>NOMBRE</th>
+                    <th>DESCRIPCIÓN</th>
+                    <th>AÑO QUE NOS CONOCIMOS</th>
+                </tr>
+            </thead>
+            <!-- AJAX: app.js llena estas filas desde datos/amigos.json -->
+            <tbody id="tabla-amigos">
+                <tr><td colspan="3" class="estado">Cargando amigos...</td></tr>
+            </tbody>
+        </table>
+    </section>
+</main>

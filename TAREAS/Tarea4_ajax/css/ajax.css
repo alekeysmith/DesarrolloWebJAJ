@@ -1,0 +1,55 @@
+/* Estilos comunes para la parte AJAX (se cargan despues del tema de cada seccion) */
+
+/* El contenedor no crea caja: los hijos se ven igual que en la Tarea 3 */
+#contenido {
+    display: contents;
+}
+
+/* Seccion actual en el menu (funciona con cualquier color de tema) */
+nav a.activo {
+    filter: brightness(0.6);
+    outline: 2px solid white;
+    outline-offset: -4px;
+}
+
+/* Cargando... */
+.estado {
+    text-align: center;
+    font-style: italic;
+}
+
+/* Errores */
+.error {
+    color: darkred;
+    background-color: mistyrose;
+    border-left-color: red;
+}
+
+/* Mensajes de los formularios */
+.msg-ok,
+.msg-error {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.msg-ok {
+    color: darkgreen;
+    border-left: 4px solid green;
+}
+
+.msg-error {
+    color: darkred;
+    border-left: 4px solid red;
+}
+
+.msg-ok:empty,
+.msg-error:empty {
+    display: none;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
