@@ -1,0 +1,8 @@
+[
+  { "hobby": "Jugar Futsal", "descripcion": "Me gusta mucho jugar este deporte y casi juego diariamente o casi diario y me gustar parar valones.", "frecuencia": "Casi Diario", "imagen": "imagenes/hobbies.png", "alt": "Bengi" },
+  { "hobby": "Ver películas", "descripcion": "Disfruto de diferentes géneros pero mas me gustan las peliculas de suspenso  y terror tienen buenas historias y son muy interesantes.", "frecuencia": "Fin de semana", "imagen": "imagenes/peliculas.jfif", "alt": "terror" },
+  { "hobby": "Ir al gimnasio", "descripcion": "De vez en cuando voy al jugar boley para aligerar y practicar saltos y desestresarme del estudio.", "frecuencia": "2 veces por semana", "imagen": "imagenes/boley.jfif", "alt": "gym" },
+  { "hobby": "Escuchar música", "descripcion": "La música es mi compañía constante, me inspira y me motiva durante el día.", "frecuencia": "Todo el tiempo", "imagen": "imagenes/musica.jfif", "alt": "musica" },
+  { "hobby": "Jugar juegos online", "descripcion": "Me gustar juegos de accion y aventura me ayuda a distraerme y bueno la paso bien con los amigos", "frecuencia": "Cuando tengo tiempo libre", "imagen": "imagenes/hobbies2.jpg", "alt": "juegos" },
+  { "hobby": "Jugar y Aprender con Duolingo", "descripcion": "Me gustar aprender y practicar ingles con duolingo aparte que estoy en unos curso de ingles los ando practicando con duolingo.", "frecuencia": "Cada dia", "imagen": "imagenes/duo.png", "alt": "duolingo" }
+]

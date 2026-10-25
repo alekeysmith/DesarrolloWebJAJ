@@ -1,0 +1,196 @@
+body {
+    background-color: lavender;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: darkviolet;
+    font-size: 24px;
+    margin: 0 0 20px 0;
+}
+
+h2 {
+    color: purple;
+    font-size: 18px;
+    margin: 0;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    background-color: purple;
+    border-radius: 5px;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    gap: 20px;
+}
+
+.formulario-principal {
+    display: grid;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 2px solid purple;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: lavender;
+    display: grid;
+    gap: 15px;
+}
+
+legend {
+    color: darkviolet;
+    font-weight: bold;
+    padding: 0 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+label {
+    color: darkviolet;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    padding: 10px;
+    border: 2px solid purple;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.radio-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.radio-group input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+
+.boton-enviar {
+    background-color: purple;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    justify-self: center;
+    width: fit-content;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        gap: 15px;
+    }
+    
+    nav {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    nav a {
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    main {
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    fieldset {
+        padding: 15px;
+        gap: 12px;
+    }
+    
+    .radio-group, .checkbox-group {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-size: 16px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select,
+    textarea {
+        padding: 8px;
+        font-size: 12px;
+    }
+    
+    .boton-enviar {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
