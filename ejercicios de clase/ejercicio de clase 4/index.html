@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2do Parcial SIS 256 - Examen C</title>
+
+    <script src="examen.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+
+    <header>Segundo Parcial SIS 256 - Tecnologia y Desarrollo Web</header>
+    <div id="info">
+      Estudiante: __________________ &nbsp;|&nbsp; CU: ______________
+    </div>
+    <div id="contenedor">
+      <div id="menu">
+        <button class="btnMenu" onclick="pregunta1()">Pregunta 1</button>
+        <button class="btnMenu" onclick="pregunta2()">Pregunta 2</button>
+        <button class="btnMenu" onclick="pregunta3()">Pregunta 3</button>
+        <button class="btnMenu" onclick="pregunta4()">Pregunta 4</button>
+      </div>
+      <div id="contenido">
+        <h2>Bienvenido</h2>
+        <p>Seleccione una opción del menú.</p>
+      </div>
+    </div>
+    <div id="mensaje">Inicializando...</div>
+    <div class="modal">
+      <div class="modal-caja">
+        <div class="modal-titulo">Detalle Receta</div>
+        <div id="contenido-modal">
+
+        </div>
+        <div class="modal-botones">
+          <button id="btnEliminar" class="btn-eliminar" onclick="eliminarReceta()">Eliminar</button>
+          <button class="btn-cerrar" onclick="cerrarmodal()">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

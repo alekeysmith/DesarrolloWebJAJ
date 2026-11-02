@@ -1,0 +1,111 @@
+/* ---------- Catálogo (3 columnas) ---------- */
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(3, 130px);
+  gap: 12px;
+}
+.tarjeta {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+  background: #fff;
+}
+.tarjeta:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+.receta {
+  width: 100px;
+  height: 100px;
+  object-fit: cover; /* no deforma la imagen */
+}
+.tarjeta-titulo {
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+.tarjeta-tipo {
+  font-size: 12px;
+  color: #777;
+}
+
+/* ---------- Modal ---------- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;     /* centra la caja (el JS usa display:flex) */
+  justify-content: center;
+}
+.modal-caja {
+  background: #fff;
+  width: 360px;
+  max-width: 95%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.modal-titulo {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+#contenido-modal {
+  padding: 12px;
+}
+.imagen-modal {
+  display: block;
+  margin: 0 auto 10px;
+  object-fit: cover;
+}
+.detalle-titulo {
+  font-weight: bold;
+  font-size: 16px;
+}
+.detalle-tipo {
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+.modal-botones {
+  display: flex;
+  gap: 8px;
+  padding: 0 12px 12px;
+}
+.btn-eliminar {
+  background: #d9231c;
+  color: #fff;
+  border: 0;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-cerrar {
+  background: #444;
+  color: #fff;
+  border: 0;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.modal-botones button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ---------- Mensajes ---------- */
+.error,
+#mensaje.error {
+  color: #b00020;
+}
+#mensaje.ok {
+  color: #1b7a2b;
+}
